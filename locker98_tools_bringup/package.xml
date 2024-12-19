@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>locker98_tools_bringup</name>
+  <version>0.0.1</version>
+  <description>This is a collection of launch files that I find useful on a regular basis.</description>
+  <maintainer email="coolemail45@proton.me">locker98</maintainer>
+  <license>GNU 3.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
