@@ -4,13 +4,13 @@
     <arg name="map" default="" description="Map input" />
 
     <!-- Include bringup launch file -->
-    <include file="$(find nav2_bringup)/launch/bringup_launch.py">
+    <include file="$(find-pkg-share nav2_bringup)/launch/bringup_launch.py">
         <arg name="use_sim_time" value="$(arg use_sim_time)" />
         <arg name="map" value="$(arg map)" />
     </include>
 
     <!-- RViz node -->
     <node pkg="rviz2" exec="rviz2" output="screen">
-        <param name="config" value="$(find locker98_tools_bringup)/rviz/nav2_config.rviz" />
+        <param name="config" value="$(find-pkg-share locker98_tools_bringup)/rviz/nav2_config.rviz" />
     </node>
 </launch>
