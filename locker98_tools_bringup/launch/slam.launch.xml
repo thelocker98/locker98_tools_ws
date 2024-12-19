@@ -1,1 +1,12 @@
- 
+<launch>
+    <arg name="use_sim_time" default="False" />
+    <arg name="map"/>
+
+    <include file="$(find-pkg-share nav2_bringup)/launch/bringup_launch.py">
+        <arg name="map" value="$(arg map)"/>
+        <arg name="use_sim_time" value="$(arg use_sim_time)"/>
+    </include>
+
+    <!--<node pkg="rviz2" executable="rviz2" output="screen"  args="-d $(find-pkg-share locker98_tools_bringup)/rviz/nav2_config.rviz" />
+    -->
+</launch>
