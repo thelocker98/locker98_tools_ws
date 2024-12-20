@@ -5,8 +5,8 @@
 
     <!-- Include bringup launch file -->
     <include file="$(find-pkg-share nav2_bringup)/launch/bringup_launch.py">
-        <arg name="use_sim_time" value="$(arg use_sim_time)" />
-        <arg name="map" value="$(arg map)" />
+        <arg name="use_sim_time" value="$(var use_sim_time)" />
+        <arg name="map" value="$(var map)" />
     </include>
 
     <!-- RViz node -->
